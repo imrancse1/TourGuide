@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D5C2C2"
+    android:layout_margin="10dp">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#2D5257"
+      >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/common_google_signin_btn_icon_dark"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/forcastimageTV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Temperature : "
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/minTemp"
+         android:textColor="#fff"
+         android:text="mintemp"
+         android:layout_marginLeft="120dp"
+         android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Temperature : "
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/minTemp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxTemp"
+        android:textColor="#fff"
+        android:layout_below="@+id/minTemp"
+        android:hint="maxtemp"
+        android:layout_marginLeft="120dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/maxTemp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTV"
+        android:textColor="#fff"
+        android:layout_below="@+id/maxTemp"
+        android:hint="dates"
+        android:layout_marginLeft="50dp"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/messagetv"
+          android:textColor="#fff"
+          android:layout_below="@+id/dateTV"
+          android:hint="description"
+          android:layout_marginLeft="10dp"
+          android:paddingBottom="5dp"/>
+  </RelativeLayout>
+
+</android.support.v7.widget.CardView>

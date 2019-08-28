@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "126862282536",
+    "firebase_url": "https://my-movie-project-4570a.firebaseio.com",
+    "project_id": "my-movie-project-4570a",
+    "storage_bucket": "my-movie-project-4570a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126862282536:android:1b7829f2ac180d28",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126862282536-omhhsef61db4ltehdreu84bifvfsgfda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVo-XXZImbSe3aqUvHxlSY_0FbMP5LOqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126862282536-omhhsef61db4ltehdreu84bifvfsgfda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126862282536:android:2ce2e4fdde01b537",
+        "android_client_info": {
+          "package_name": "com.example.mytourguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126862282536-omhhsef61db4ltehdreu84bifvfsgfda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVo-XXZImbSe3aqUvHxlSY_0FbMP5LOqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126862282536-omhhsef61db4ltehdreu84bifvfsgfda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

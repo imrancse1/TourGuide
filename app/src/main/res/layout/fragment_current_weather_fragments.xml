@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wea"
+    tools:context=".CurrentWeatherFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/datetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="dates"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datetv"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Place"
+                android:textSize="25dp"
+                android:id="@+id/placetv"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#E0F123"
+                    android:text="C"
+                    android:textColor="#3F51B5"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:id="@+id/cbtn"
+
+                    />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DAA60F"
+                    android:text="F"
+                    android:textColor="#3F51B5"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:id="@+id/fbtn"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textSize="60dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/temptv"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/wea"
+                android:id="@+id/imagetv"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Temp :"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="maxtemp"
+                android:textSize="25dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/maxtemptv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Temp :"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/maxtemptv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="mintemp"
+                android:textSize="25dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/mintemptv"
+                android:layout_below="@id/maxtemptv"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h "
+                android:textSize="40dp"
+                android:layout_marginLeft="85dp"
+                android:id="@+id/humiditytv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textSize="40dp"
+
+                android:layout_marginLeft="125dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="155dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/testtv"
+                android:layout_below="@id/humiditytv"
+                android:hint="checkexception"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

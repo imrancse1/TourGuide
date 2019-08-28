@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:progress="26"
+        android:progressTint="#2340DD"
+        android:visibility="visible"
+        android:layout_marginTop="250dp"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:progressBackgroundTint="#000"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressMessageTV"
+        android:layout_below="@id/progressBar2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/CameraMessageTV"
+        android:visibility="gone">
+        <TextView
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:layout_weight="100"
+            android:baselineAligned="false"
+            android:progress="26"
+            android:text="No Image is clicked "
+            android:layout_marginLeft="40dp"
+            android:textSize="30dp"
+            android:progressTint="#2340DD"
+            android:layout_marginTop="250dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="backFragments"/>
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take A Photo"
+            android:onClick="takePic"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
